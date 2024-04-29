@@ -1,0 +1,61 @@
+<!--
+Christopher Roy
+04/20/2020
+Section AK: Austin Jenchi
+
+The contents of the webpage index.html. The page is essentially a small battlegame between
+the player and a mindflayer. The player either dies, escapes, kills the monster, or fail to the kill
+the monster as it escapes. Once one of the previous 4 conditions are met, the html of main
+is cleared and replaced with appropriate text encapsulated in a strong element.
+-->
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>MY GAME</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="index.js"></script>
+    </head>
+    <body>
+      <header id="location">Combat Trial #1</header>
+      <main>
+        <section>
+          <hr>
+          <article>
+            <div id="text-box">
+              <p id="name">Enemy Name: MindFlayer</p>
+              <div><strong>Enemy Health: <span id="e-health">100</span></strong></div>
+              <div><strong>Enemy Attack: <span id="e-attack">34</span></strong></div>
+              <div><strong>Enemy Defense: <span id="e-defense">46</span></strong></div>
+              <div><strong>Enemy Fear: <span id="e-fear">0</span></strong></div>
+            </div>
+            <aside>
+                  <!--http://corwyn.wdfiles.com/local--files/mind-flayer/Mind%20flayer%203.jpg-->
+                  <img src="mind_flayer.jpg" alt="A picture of a mindflayer">
+                  <div id="log">
+                    <div id="actions">Enemy Actions: <span id="e-action"></span>
+                    <p></p>
+                    Your Action: <span id="g-action"></span></div>
+                  </div>
+            </aside>
+          </article>
+            <hr>
+            <aside id="fight">
+              <button id="hit">Attack</button>
+              <button id="defend">Defend</button>
+              <button id="item">Item</button>
+              <button id="run">Run</button>
+            </aside>
+            <article id="stats">
+              <h3>Stats</h3>
+              <aside>
+                <div>Health: <span id="health">100</span></div>
+                <div>Attack: <span id="attack">36</span></div>
+                <div>Defense: <span id="defense">40</span></div>
+                <div>Fear: <span id="fear">0</span></div>
+              </aside>
+            </article>
+        </section>
+      </main>
+    </body>
+  </html>

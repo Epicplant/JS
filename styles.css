@@ -1,0 +1,131 @@
+/*
+  Christopher Roy
+  04/20/2020
+  Section AK: Austin Jenchi
+
+  A page that contains and applys style to the webpage index.html. This stylesheet contains such
+  elements as fonts, flex, borders, and more.
+*/
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: darkslategrey;
+}
+
+section {
+  height: 500px;
+  width: 100%;
+}
+
+article {
+  flex-flow: row wrap;
+}
+
+#text-box {
+  background: lightgreen;
+  box-shadow: 10px 5px 5px black;
+  width: 500px;
+  height: 350px;
+}
+
+header {
+  font-weight: bold;
+  text-shadow: 4px 4px black;
+}
+
+hr {
+  width: 100%;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+aside {
+  align-self: center;
+}
+
+h3 {
+  color: darkorange;
+  font-size: 20px;
+  text-shadow: 5px 5px black;
+}
+
+#name {
+  color: purple;
+  font-size: 30px;
+}
+
+#log {
+  width: 100%;
+  height: 60px;
+  font-size: 10px;
+  background-color: greenyellow;
+}
+
+#victory {
+  font-size: 150px;
+}
+
+#text-box div {
+  width: 400px;
+  height: 40px;
+  font-size: 40px;
+  background-color: brown;
+  box-shadow: 4px 4px black;
+  border: 5px;
+}
+
+#fight button {
+  background: brown;
+  width: 150px;
+  font-size: 36px;
+}
+
+#stats aside {
+  background: brown;
+  width: 100%;
+}
+
+#stats div {
+  background: teal;
+  width: 200px;
+  font-size: 30px;
+}
+
+aside, #text-box {
+  flex-direction: column;
+}
+
+#victory, header {
+  text-align: center;
+  color: red;
+}
+
+#fight, #stats aside {
+  flex-direction: row;
+}
+
+#fight, aside, #text-box {
+  align-content: center;
+}
+
+#text-box, #fight button {
+  align-self: flex-start;
+}
+
+article, #text-box, #fight, #stats aside {
+  justify-content: space-evenly;
+}
+
+aside, article, #text-box, #fight, #stats aside {
+  display: flex;
+}
+
+#fight button, #stats aside, #stats div {
+  height: 50px;
+}
